@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="D:\software\frozen.css">
+        <meta charset="8">
+        <datalist id="items">
+            <option>peas
+            <option>corn
+            <option>chilli garlic shorts
+            <option>veg cutlet
+             <option>malai paneer
+            <option>french fries
+            <option>cheese and corn bites
+            <option>cheese fingers
+            <option>malabar paratha
+            <option>american hash browns
+            <option>paneer bites
+            <option>aloo paratha
+            <option>chaupati aloo tikki
+            <option>lachha parantha
+            <option>veg fingers
+            <option>herb chilli patty
+        </datalist>
+        <datalist id="weight" >
+            <option value="100g">
+            <option value="150g">150g
+            <option value="180g">180g
+            <option value="190g">190g
+            <option value="200g">200g
+            <option value="210g">210g
+            <option value="220g">220g
+            <option value="240g">240g
+            <option value="300g">300g
+            <option value="330g">330g
+            <option value="360g">360g
+            <option value="250g">250g
+            <option value="400g">400g
+            <option value="450g">450g
+            <option value="500g">500g
+            <option value="750g">750g
+            <option value="1kg">1kg
+            <option value="500g">500g 
+            <option value="2kg">2kg
+            <option value="5kg">5kg                              
+            </datalist>
+        <script src="test.js"></script>
+
+</head>
+<body>
+    <form>
+    
+        <dir id="top">
+            <dir style="display: inline;">
+                <img src="download.jpg" height="120px" width="180px" >
+                </dir>
+            <headder style="display: flex; flex-direction: row;" >
+                <h1 >
+                    Organization name
+                </h1>
+            
+                <span style="position: relative;top:40px; left:30px;">
+                    Phone: 99xxxxxxxxx<br>
+                    <span style="font-weight: 100;">address,<b>pin code</b></span>
+                    
+                </span>
+                
+                
+            </headder>
+              
+                    <span>
+                        <label>Date</label>
+                        <input type="date" value="date" name="d">
+                    </span>
+                    <span>
+                        <label>Bill to</label>
+                        <input type="text"  list="customer" type="customer" name="customer">
+                        <datalist id="customer">
+                            <option value="ashiana">ashiana
+                            <option value="city pulse">city pulse
+                            <option value="natraj">natraj
+                            <option value="hotel holiday home">hotel holiday home    
+                            
+                        </datalist>
+                    </span>
+                    <label>GSTIN:</label>
+                    <input type="text" value="02ACExxxxxxxx" disabled style="width:130PX;">
+
+               
+                
+                <table border="2" >
+                    <caption  style="font-size:large; text-decoration: underline; font-weight: 800; ">BILL NUMBER
+                        <input type="number" required style="width:80PX;" name="b">
+                    </caption>
+                    <tr>
+                        <th class="p">S.NO</th>
+                        <th class="product">ITEM NAME</th>
+                        <th class="weight">WEIGHT</th>
+                        <th class="qty">QTY</th>
+                        <th class="sgst">SGST</th>
+                        <TH class="gst">GST</TH>
+                        <th class="rate">AMOUNT</th>
+
+                    </tr>
+                    <tr>
+                        <td class="p">1</td>
+                        <td class="product">
+                           <input type="text" list="items" required style="width:200px;" name="q">
+
+                        </td>
+                        <td class="weight">
+                            
+                            <input type="text" list="weight" name="wc" style="width: 70px;">
+                            
+                            
+                        </td>
+                        <td class="qtry" >
+                            
+                               <input type="number" style="width:60px;" required name="qt"> 
+                           
+                        </td>
+                        <td class="sgst">
+                            <input type="text" style="width: 50px;" name="sgst" value=" &#37">
+                        </td>
+                        <td class="gst">
+                            <input type="text" style="width: 50px;" name="gst" value="  &#37">
+                        </td>
+                        <td class="rate" >
+                           
+                                <input type="text" required name="t" value=" &#8377 " >
+                          
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p">2</td>
+                        <td class="product">
+                           <input type="text" list="items" required style="width:200px;" name="q2">
+
+                        </td>
+                        <td class="weight">
+                            
+                            <input type="text" list="weight" name="wc2" style="width: 70px;">
+                            
+                            
+                        </td>
+                        <td class="qtry" >
+                            
+                               <input type="number" style="width:60px;" required name="qt2"> 
+                           
+                        </td>
+                        <td class="sgst">
+                            <input type="text" style="width: 50px;" name="sgst2" value=" &#37">
+                        </td>
+                        <td class="gst">
+                            <input type="text" style="width: 50px;" name="gst2"  value=" &#37">
+                        </td>
+                        <td class="rate" >
+                           
+                            <input type="text" required name="t2" value="&#8377" >
+                          
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p">3</td>
+                        <td class="product">
+                           <input type="text" list="items" required style="width:200px;" name="q3">
+
+                        </td>
+                        <td class="weight">
+                            
+                            <input type="text" list="weight" name="wc3" style="width: 70px;">
+                            
+                            
+                        </td>
+                        <td class="qtry" >
+                            
+                               <input type="number" style="width:60px;" required name="qt3"> 
+                           
+                        </td>
+                        <td class="sgst">
+                            <input type="text" style="width: 50px;" name="sgst3" value=" &#37">
+                        </td>
+                        <td class="gst">
+                            <input type="text" style="width: 50px;" name="gst3" value=" &#37">
+                        </td>
+                        <td class="rate" >
+                           
+                                <input type="text" required name="t3" value="&#8377" >
+                          
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p">4</td>
+                        <td class="product">
+                           <input type="text" list="items" required style="width:200px;" name="q4">
+
+                        </td>
+                        <td class="weight">
+                            
+                            <input type="text" list="weight" name="wc4" style="width: 70px;">
+                            
+                            
+                        </td>
+                        <td class="qtry" >
+                            
+                               <input type="number" style="width:60px;" required name="qt4"> 
+                           
+                        </td>
+                        <td class="sgst">
+                            <input type="text" style="width: 50px;" name="sgst4" value=" &#37">
+                        </td>
+                        <td class="gst">
+                            <input type="text" style="width: 50px;" name="gst4" value=" &#37">
+                        </td>
+                        <td class="rate" >
+                           
+                                <input type="text" required name="t4"  value="&#8377">
+                          
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p">5</td>
+                        <td class="product">
+                           <input type="text" list="items" required style="width:200px;" name="q5">
+
+                        </td>
+                        <td class="weight">
+                            
+                            <input type="text" list="weight" name="wc5" style="width: 70px;">
+                            
+                            
+                        </td>
+                        <td class="qtry" >
+                            
+                               <input type="number" style="width:60px;" required name="qt5"> 
+                           
+                        </td>
+                        <td class="sgst">
+                            <input type="text" style="width: 50px;" name="sgst5" value=" &#37">
+                        </td>
+                        <td class="gst">
+                            <input type="text" style="width: 50px;" name="gst5" value=" &#37">
+                        </td>
+                        <td class="rate" >
+                           
+                                <input type="text" required name="t5" value="&#8377" >
+                          
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p">6</td>
+                        <td class="product">
+                           <input type="text" list="items" required style="width:200px;" name="q6">
+
+                        </td>
+                        <td class="weight">
+                            
+                            <input type="text" list="weight" name="wc6" style="width: 70px;">
+                            
+                            
+                        </td>
+                        <td class="qtry" >
+                            
+                               <input type="number" style="width:60px;" required name="qt6"> 
+                           
+                        </td>
+                        <td class="sgst">
+                            <input type="text" style="width: 50px;" name="sgst6" value=" &#37">
+                        </td>
+                        <td class="gst">
+                            <input type="text" style="width: 50px;" name="gst6" value=" &#37">
+                        </td>
+                        <td class="rate" >
+                           
+                                <input type="text" required name="t6" value="&#8377">
+                          
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p">7</td>
+                        <td class="product">
+                           <input type="text" list="items" required style="width:200px;" name="q7">
+
+                        </td>
+                        <td class="weight">
+                            
+                            <input type="text" list="weight" name="wc7" style="width: 70px;">
+                            
+                            
+                        </td>
+                        <td class="qtry" >
+                            
+                               <input type="number" style="width:60px;" required name="qt7"> 
+                           
+                        </td>
+                        <td class="sgst">
+                            <input type="text" style="width: 50px;" name="sgst7" value=" &#37">
+                        </td>
+                        <td class="gst">
+                            <input type="text" style="width: 50px;" name="gst7" value=" &#37">
+                        </td>
+                        <td class="rate" >
+                           
+                                <input type="text" required name="t7" value="&#8377" >
+                          
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p">8</td>
+                        <td class="product">
+                           <input type="text" list="items" required style="width:200px;" name="q8">
+
+                        </td>
+                        <td class="weight">
+                            
+                            <input type="text" list="weight" name="wc8" style="width: 70px;">
+                            
+                            
+                        </td>
+                        <td class="qtry" >
+                            
+                               <input type="number" style="width:60px;" required name="qt8"> 
+                           
+                        </td>
+                        <td class="sgst">
+                            <input type="text" style="width: 50px;" name="sgst8" value=" &#37">
+                        </td>
+                        <td class="gst">
+                            <input type="text" style="width: 50px;" name="gst8" value=" &#37 ">
+                        </td>
+                        <td class="rate" >
+                           
+                                <input type="text" required name="t8"  value="&#8377">
+                          
+
+                            
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="TOTAL" colspan="6" style="text-align: center;">TOTAL</td>
+                       
+                        <td>
+                            <input type="text" required style="background-color: rgba(71, 134, 136, 0.5);" name="total" value="&#8377">
+                        </td>
+                    </tr>
+                </table>
+                <H3>SIGNATURE
+                    <input type="text" required disabled value="ANANDkhanna" style="font-style: italic;">
+                </H3>
+               
+                <input type="submit" value="copy" onclick="copyy(this.form)">
+            
+
+        </dir>
+        <dir id="bottom">
+            <dir style="display: inline;">
+                <img src="download.jpg" height="120px" width="180px" >
+                </dir>
+            <headder style="display: flex; flex-direction: row;" >
+                <h1 >
+                   Organization name
+                </h1>
+            
+                <span style="position: relative;top:40px; left:30px;">
+                    Phone: 98xxxxxxxx<br>
+                    
+                </span>
+                
+                
+            </headder>
+              
+                    <span>
+                        <label>Date</label>
+                        <input type="date" value="date" name="dc">
+                    </span>
+                    <span>
+                        <label>Bill to</label>
+                        <input type="text"  list="customer" type="customer" name="customercopy">
+                        <datalist id="customer">
+                            <option value="ashiana">ashiana
+                            <option value="city pulse">city pulse
+                            <option value="natraj">natraj
+                            <option value="hotel holiday home">hotel holiday home    
+                            
+                        </datalist>
+                    </span>
+                    <label>GSTIN:</label>
+                    <input type="text" value="02Axxxxxxxx" disabled style="width:130PX;">
+
+               
+                
+                <table border="2" >
+                    <caption  style="font-size:large; text-decoration: underline; font-weight: 800; ">BILL NUMBER
+                        <input type="number" required style="width:80PX;" name="bc">
+                    </caption>
+                    <tr>
+                        <th class="p">S.NO</th>
+                        <th class="product">ITEM NAME</th>
+                        <th class="weight">WEIGHT</th>
+                        <th class="qty">QTY</th>
+                        <th class="sgst">SGST</th>
+                        <TH class="gst">GST</TH>
+                        <th class="rate">AMOUNT</th>
+
+                    </tr>
+                    <tr>
+                        <td class="p">1</td>
+                        <td class="product">
+                           <input type="text" list="items" required style="width:200px;" name="qq">
+
+                        </td>
+                        <td class="weight">
+                            
+                                <input type="text" list="weight" name="w" style="width:70px;">
+                              
+                        </td>
+                        <td class="qtry" >
+                            
+                               <input type="number" style="width:60px;" required name="qtc">
+                           
+                        </td>
+                        <td class="sgst">
+                            <input type="text" style="width: 50px;" name="sgstc" >
+                        </td>
+                        <td class="gst">
+                            <input type="text" style="width: 50px;" name="gstc">
+                        </td>
+                        <td class="rate" >
+                           
+                                <input type="text" required name="tc">
+                          
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p">2</td>
+                        <td class="product">
+                           <input type="text" list="items" required style="width:200px;" name="qq2">
+
+                        </td>
+                        <td class="weight">
+                            
+                                <input type="text" list="weight" name="w2" style="width:70px;">
+                              
+                        </td>
+                        <td class="qtry" >
+                            
+                               <input type="number" style="width:60px;" required name="qtc2">
+                           
+                        </td>
+                        <td class="sgst">
+                            <input type="text" style="width: 50px;" name="sgstc2" >
+                        </td>
+                        <td class="gst">
+                            <input type="text" style="width: 50px;" name="gstc2">
+                        </td>
+                        <td class="rate" >
+                           
+                                <input type="text" required name="tc2">
+                          
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p">3</td>
+                        <td class="product">
+                           <input type="text" list="items" required style="width:200px;" name="qq3">
+
+                        </td>
+                        <td class="weight">
+                            
+                                <input type="text" list="weight" name="w3" style="width:70px;">
+                              
+                        </td>
+                        <td class="qtry" >
+                            
+                               <input type="number" style="width:60px;" required name="qtc3">
+                           
+                        </td>
+                        <td class="sgst">
+                            <input type="text" style="width: 50px;" name="sgstc3" >
+                        </td>
+                        <td class="gst">
+                            <input type="text" style="width: 50px;" name="gstc3">
+                        </td>
+                        <td class="rate" >
+                           
+                                <input type="text" required name="tc3">
+                          
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p">4</td>
+                        <td class="product">
+                           <input type="text" list="items" required style="width:200px;" name="qq4">
+
+                        </td>
+                        <td class="weight">
+                            
+                                <input type="text" list="weight" name="w4" style="width:70px;">
+                              
+                        </td>
+                        <td class="qtry" >
+                            
+                               <input type="number" style="width:60px;" required name="qtc4">
+                           
+                        </td>
+                        <td class="sgst">
+                            <input type="text" style="width: 50px;" name="sgstc4" >
+                        </td>
+                        <td class="gst">
+                            <input type="text" style="width: 50px;" name="gstc4">
+                        </td>
+                        <td class="rate" >
+                           
+                                <input type="text" required name="tc4">
+                          
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p">5</td>
+                        <td class="product">
+                           <input type="text" list="items" required style="width:200px;" name="qq5">
+
+                        </td>
+                        <td class="weight">
+                            
+                                <input type="text" list="weight" name="w5" style="width:70px;">
+                              
+                        </td>
+                        <td class="qtry" >
+                            
+                               <input type="number" style="width:60px;" required name="qtc5">
+                           
+                        </td>
+                        <td class="sgst">
+                            <input type="text" style="width: 50px;" name="sgstc5" >
+                        </td>
+                        <td class="gst">
+                            <input type="text" style="width: 50px;" name="gstc5">
+                        </td>
+                        <td class="rate" >
+                           
+                                <input type="text" required name="tc5">
+                          
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p">6</td>
+                        <td class="product">
+                           <input type="text" list="items" required style="width:200px;" name="qq6">
+
+                        </td>
+                        <td class="weight">
+                            
+                                <input type="text" list="weight" name="w6" style="width:70px;">
+                              
+                        </td>
+                        <td class="qtry" >
+                            
+                               <input type="number" style="width:60px;" required name="qtc6">
+                           
+                        </td>
+                        <td class="sgst">
+                            <input type="text" style="width: 50px;" name="sgstc6" >
+                        </td>
+                        <td class="gst">
+                            <input type="text" style="width: 50px;" name="gstc6">
+                        </td>
+                        <td class="rate" >
+                           
+                                <input type="text" required name="tc6">
+                          
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p">7</td>
+                        <td class="product">
+                           <input type="text" list="items" required style="width:200px;" name="qq7">
+
+                        </td>
+                        <td class="weight">
+                            
+                                <input type="text" list="weight" name="w7" style="width:70px;">
+                              
+                        </td>
+                        <td class="qtry" >
+                            
+                               <input type="number" style="width:60px;" required name="qtc7">
+                           
+                        </td>
+                        <td class="sgst">
+                            <input type="text" style="width: 50px;" name="sgstc7" >
+                        </td>
+                        <td class="gst">
+                            <input type="text" style="width: 50px;" name="gstc7">
+                        </td>
+                        <td class="rate" >
+                           
+                                <input type="text" required name="tc7">
+                          
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p">8</td>
+                        <td class="product">
+                           <input type="text" list="items" required style="width:200px;" name="qq8">
+
+                        </td>
+                        <td class="weight">
+                            
+                                <input type="text" list="weight" name="w8" style="width:70px;">
+                              
+                        </td>
+                        <td class="qtry" >
+                            
+                               <input type="number" style="width:60px;" required name="qtc8">
+                           
+                        </td>
+                        <td class="sgst">
+                            <input type="text" style="width: 50px;" name="sgstc8" >
+                        </td>
+                        <td class="gst">
+                            <input type="text" style="width: 50px;" name="gstc8">
+                        </td>
+                        <td class="rate" >
+                           
+                                <input type="text" required name="tc8">
+                          
+
+                            
+                        </td>
+                    </tr>
+                    
+
+                    <tr>
+                        <td class="TOTAL" colspan="6" style="text-align: center;">TOTAL</td>
+                       
+                        <td>
+                            <input type="text" required style="background-color: rgba(71, 134, 136, 0.5);" name="totalc">
+                        </td>
+                    </tr>
+                </table>
+                <H3>SIGNATURE
+                    <input type="text" required disabled value="ANANDkhanna" style="font-style: italic;">
+                </H3>
+               <a title="print button" onclick="window.print();" target="_blank" style="font-size: x-large; font-weight: bolder;"><span id="print">PRINT BILL</span>
+                </a>
+           
+           
+        </dir>
+    </form>
+</body>
+</html>
